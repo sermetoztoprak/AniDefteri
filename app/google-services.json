@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "381432766234",
+    "firebase_url": "https://anidefteri-c676e.firebaseio.com",
+    "project_id": "anidefteri-c676e",
+    "storage_bucket": "anidefteri-c676e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381432766234:android:ded6579e4be5e724",
+        "android_client_info": {
+          "package_name": "com.finansalbt.anidefteri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381432766234-e3e9avr3e8tk64lkevf8u4mfp54lfaj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finansalbt.anidefteri",
+            "certificate_hash": "4bca4800e3c21986793e910379e9e70cb3846127"
+          }
+        },
+        {
+          "client_id": "381432766234-s7pihqihn0dpun7ucaoeslscrkq5pgug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgeRQSDfDTHiplWRAdWzlyFqEjta9O40E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381432766234-s7pihqihn0dpun7ucaoeslscrkq5pgug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
