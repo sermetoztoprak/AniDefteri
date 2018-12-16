@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseUser user = mAuth.getCurrentUser();
 
-        if (user != null)
-        {
-            Intent intent = new Intent(MainActivity.this,FeedActivity.class);
-            startActivity(intent);
-        }
+//        if (user != null)
+//        {
+//            Intent intent = new Intent(MainActivity.this,FeedActivity.class);
+//            startActivity(intent);
+//        }
     }
 
     public void signIn (View view){
