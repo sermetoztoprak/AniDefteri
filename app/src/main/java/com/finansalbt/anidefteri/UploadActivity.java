@@ -62,7 +62,7 @@ public class UploadActivity extends AppCompatActivity {
 
     public void upload (View view){
 
-        UUID uuıd = UUID.randomUUID();
+        final UUID uuıd = UUID.randomUUID();
         final String imageName = "images/"+uuıd+".jpg";
 
         StorageReference storageReference = mStorageRef.child(imageName);
@@ -76,9 +76,21 @@ public class UploadActivity extends AppCompatActivity {
                     public void onSuccess(Uri uri) {
                         String downloadURL =uri.toString();
                         FirebaseUser user = mAuth.getCurrentUser();
-                        String usetEmail =user.getEmail();
+                        String userEmail =user.getEmail();
 
                         String userDescription = postDescriptionText.getText().toString();
+
+                        UUID uuıd1 = UUID.randomUUID();
+                        String uuidString = uuıd1.toString();
+
+                        myRef.child("Posts").child(uuidString).child("useremail").setValue(userEmail);
+                        myRef.child("Posts").child(uuidString).child("description").setValue(userDescription);
+                        myRef.child("Posts").child(uuidString).child("downloadurl").setValue(downloadURL);
+
+                        Toast.makeText(UploadActivity.this, "Anı Oluşturuldu", Toast.LENGTH_SHORT).show();
+
+                        Intent intent = new Intent(UploadActivity.this,FeedActivity.class);
+                        startActivity(intent);
                     }
                 });
 
